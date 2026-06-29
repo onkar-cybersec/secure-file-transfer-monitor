@@ -1,0 +1,51 @@
+[2026-06-26 18:43:56] Secure File Transfer Monitoring System started.
+[2026-06-26 18:43:56] Monitoring folder: monitored-folder
+[2026-06-26 18:49:05] FILE CREATED: monitored-folder/normal-test.txt
+[2026-06-26 18:49:05] FILE MODIFIED: monitored-folder/normal-test.txt
+[2026-06-26 20:20:39] FILE DELETED: monitored-folder/normal-test.txt
+[2026-06-26 20:21:37] FILE CREATED: monitored-folder/move-test.txt
+[2026-06-26 20:21:37] FILE MODIFIED: monitored-folder/move-test.txt
+[2026-06-26 20:26:34] FILE MOVED: from monitored-folder/move-test.txt to monitored-folder/moved-test.txt
+[2026-06-26 20:27:30] Monitoring stopped by user.
+[2026-06-27 01:54:59] Secure File Transfer Monitoring System started.
+[2026-06-27 01:54:59] Monitoring folder: monitored-folder
+[2026-06-27 01:54:59] Sensitive folder: sensitive-data
+[2026-06-27 01:54:59] Transfer destination: transfer-destination
+[2026-06-27 01:56:29] FILE CREATED: sensitive-data/employee-salary-confidential.txt
+[2026-06-27 01:56:29] ALERT: Sensitive file created: sensitive-data/employee-salary-confidential.txt
+[2026-06-27 01:56:29] FILE MODIFIED: sensitive-data/employee-salary-confidential.txt
+[2026-06-27 01:56:29] ALERT: Sensitive file modified: sensitive-data/employee-salary-confidential.txt
+[2026-06-27 01:58:20] FILE CREATED: transfer-destination/employee-salary-confidential.txt
+[2026-06-27 01:58:20] ALERT: Sensitive file created: transfer-destination/employee-salary-confidential.txt
+[2026-06-27 01:58:21] FILE DELETED: sensitive-data/employee-salary-confidential.txt
+[2026-06-27 01:58:21] ALERT: Sensitive file deleted: sensitive-data/employee-salary-confidential.txt
+[2026-06-27 01:58:57] Monitoring stopped by user.
+[2026-06-27 02:03:08] Secure File Transfer Monitoring System started.
+[2026-06-27 02:03:08] Monitoring folder: monitored-folder
+[2026-06-27 02:03:08] Sensitive folder: sensitive-data
+[2026-06-27 02:03:08] Transfer destination: transfer-destination
+[2026-06-27 02:03:08] Integrity verification enabled using SHA256.
+[2026-06-27 02:03:47] FILE CREATED: monitored-folder/integrity-test.txt
+[2026-06-27 02:03:47] HASH RECORDED: monitored-folder/integrity-test.txt | SHA256: ae9fc3bbfcf33113ca9b3aeecc00414fe284526034158303991a4e34ff1eb0dd
+[2026-06-27 02:03:47] FILE MODIFIED: monitored-folder/integrity-test.txt
+[2026-06-27 02:03:48] INTEGRITY OK: monitored-folder/integrity-test.txt
+[2026-06-27 02:03:56] FILE MODIFIED: monitored-folder/integrity-test.txt
+[2026-06-27 02:03:56] ALERT: Hash mismatch detected for monitored-folder/integrity-test.txt
+[2026-06-27 02:03:56] OLD HASH: ae9fc3bbfcf33113ca9b3aeecc00414fe284526034158303991a4e34ff1eb0dd
+[2026-06-27 02:03:56] NEW HASH: 8652229260d253c29f98665c02c3664ffc9dad82625f80adae4a3e0bde75e2f8
+[2026-06-27 02:07:04] Monitoring stopped by user.
+[2026-06-27 02:09:00] Secure File Transfer Monitoring System started.
+[2026-06-27 02:09:00] Monitoring folder: monitored-folder
+[2026-06-27 02:09:00] Sensitive folder: sensitive-data
+[2026-06-27 02:09:00] Transfer destination: transfer-destination
+[2026-06-27 02:09:00] Integrity verification enabled using SHA256.
+[2026-06-27 02:09:00] Authorization policy enabled for sensitive file transfers.
+[2026-06-27 02:09:35] FILE CREATED: transfer-destination/restricted-employee-data.txt
+[2026-06-27 02:09:35] ALERT: Sensitive file created: transfer-destination/restricted-employee-data.txt
+[2026-06-27 02:09:35] CRITICAL ALERT: Unauthorized sensitive file transfer detected: transfer-destination/restricted-employee-data.txt
+[2026-06-27 02:09:35] HASH RECORDED: transfer-destination/restricted-employee-data.txt | SHA256: 06b6bd7f48cf9b33cc942ef521cfa509decde909ef05a455f6433019a9bb851a
+[2026-06-27 02:09:35] FILE MODIFIED: transfer-destination/restricted-employee-data.txt
+[2026-06-27 02:09:35] ALERT: Sensitive file modified: transfer-destination/restricted-employee-data.txt
+[2026-06-27 02:09:35] CRITICAL ALERT: Unauthorized sensitive file transfer detected: transfer-destination/restricted-employee-data.txt
+[2026-06-27 02:09:36] INTEGRITY OK: transfer-destination/restricted-employee-data.txt
+[2026-06-27 02:12:40] Monitoring stopped by user.
